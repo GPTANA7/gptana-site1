@@ -1,103 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GPTANA Meme Coin</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Fredoka', sans-serif;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPTANA Meme Coin</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-image: url('/bg-banana-rocket.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
-      body {
-        background: url('/bg-banana-rocket.png') center center no-repeat;
-        background-size: cover;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 2rem;
-        animation: fadeIn 2s ease-in-out;
-      }
+    .logo {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #222;
+      text-shadow: 2px 2px #fff;
+      margin-bottom: 1rem;
+      animation: bounce 2s infinite;
+    }
 
-      h1 {
-        font-size: 3rem;
-        color: #ffec3e;
-        text-shadow: 2px 2px 4px #00000080;
-        margin-bottom: 1rem;
-        animation: bounce 2s infinite;
-      }
+    .subtitle {
+      font-size: 1.5rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
 
-      p {
-        font-size: 1.3rem;
-        color: white;
-        text-shadow: 1px 1px 3px #00000080;
-        margin-bottom: 2rem;
-      }
+    .gif {
+      width: 200px;
+      height: auto;
+      margin-bottom: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 255, 0, 0.7);
+    }
 
-      .gif {
-        width: 200px;
-        height: auto;
-        margin-bottom: 2rem;
-        border-radius: 20px;
-        box-shadow: 0 0 20px #ffe600aa;
-        border: 3px solid #fff176;
-        background: white;
-        padding: 0.5rem;
-      }
+    .button {
+      background-color: #fffb00;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
 
-      .btn {
-        background-color: #ffee58;
-        color: #333;
-        padding: 1rem 2rem;
-        font-size: 1.2rem;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        transition: all 0.3s ease;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-      }
+    .button:hover {
+      transform: scale(1.1);
+    }
 
-      .btn:hover {
-        background-color: #fff176;
-        transform: translateY(-3px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
       }
-
-      @keyframes bounce {
-        0%, 100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-10px);
-        }
+      50% {
+        transform: translateY(-15px);
       }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <h1>🍌 GPTANA Meme Coin</h1>
-    <p>The cutest banana coin on Solana is coming soon!</p>
-    <img src="/banana-cute.gif" alt="Cute Banana GIF" class="gif" />
-    <a href="https://x.com/GPTANA7" class="btn">🚀 Join the Banana Army</a>
-  </body>
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">🍌 GPTANA Meme Coin</div>
+  <div class="subtitle">The cutest banana coin on Solana is coming soon!</div>
+  <img src="/banana-cute.gif" alt="Banana Gif" class="gif" />
+  <a href="https://x.com/GPTANA7" class="button">🚀 Join the Banana Army</a>
+</body>
 </html>
