@@ -1,121 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GPTANA Meme Coin</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPTANA Meme Coin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Fredoka', sans-serif;
+      }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+      body {
+        background: url('/bg-banana-rocket.png') center center no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+        animation: fadeIn 2s ease-in-out;
+      }
 
-    body {
-      font-family: 'Fredoka One', cursive;
-      background: url('bg-banana-rocket.png') no-repeat center center fixed;
-      background-size: cover;
-      animation: bgFloat 30s ease-in-out infinite;
-      text-align: center;
-      overflow-x: hidden;
-    }
+      h1 {
+        font-size: 3rem;
+        color: #ffec3e;
+        text-shadow: 2px 2px 4px #00000080;
+        margin-bottom: 1rem;
+        animation: bounce 2s infinite;
+      }
 
-    @keyframes bgFloat {
-      0% { background-position-y: 0; }
-      50% { background-position-y: 20px; }
-      100% { background-position-y: 0; }
-    }
+      p {
+        font-size: 1.3rem;
+        color: white;
+        text-shadow: 1px 1px 3px #00000080;
+        margin-bottom: 2rem;
+      }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.4);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 60px 20px;
-      color: white;
-    }
+      .gif {
+        width: 200px;
+        height: auto;
+        margin-bottom: 2rem;
+        border-radius: 20px;
+        box-shadow: 0 0 20px #ffe600aa;
+        border: 3px solid #fff176;
+        background: white;
+        padding: 0.5rem;
+      }
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      text-shadow: 2px 2px 4px #000;
-    }
+      .btn {
+        background-color: #ffee58;
+        color: #333;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
 
-    p {
-      font-size: 1.4rem;
-      margin-bottom: 2rem;
-      text-shadow: 1px 1px 3px #000;
-    }
+      .btn:hover {
+        background-color: #fff176;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      }
 
-    .gif {
-      width: 180px;
-      height: 180px;
-      margin-bottom: 2rem;
-      border-radius: 20px;
-      animation: float 3s ease-in-out infinite;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-    }
+      @keyframes bounce {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
 
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-20px); }
-      100% { transform: translateY(0px); }
-    }
-
-    .btn {
-      background: #fffd5d;
-      padding: 1rem 2.5rem;
-      border-radius: 40px;
-      font-size: 1.2rem;
-      color: #222;
-      border: none;
-      cursor: pointer;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-      transition: transform 0.2s ease;
-    }
-
-    .btn:hover {
-      transform: scale(1.1);
-    }
-
-    /* Sparkles floating */
-    .sparkle {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background: url('🍌') no-repeat center;
-      background-size: contain;
-      animation: sparkleFloat 6s infinite linear;
-      opacity: 0.6;
-    }
-
-    @keyframes sparkleFloat {
-      0% { transform: translateY(100vh) rotate(0deg); }
-      100% { transform: translateY(-100vh) rotate(360deg); }
-    }
-  </style>
-</head>
-<body>
-  <div class="overlay">
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
     <h1>🍌 GPTANA Meme Coin</h1>
     <p>The cutest banana coin on Solana is coming soon!</p>
-    <img src="banana-cute.gif" alt="Cute Banana" class="gif" />
-    <button class="btn">🚀 Join the Banana Army</button>
-  </div>
-
-  <!-- Optional animated sparkles -->
-  <script>
-    for (let i = 0; i < 20; i++) {
-      const sparkle = document.createElement('div');
-      sparkle.className = 'sparkle';
-      sparkle.style.left = Math.random() * 100 + 'vw';
-      sparkle.style.animationDelay = (Math.random() * 5) + 's';
-      document.body.appendChild(sparkle);
-    }
-  </script>
-</body>
+    <img src="/banana-cute.gif" alt="Cute Banana GIF" class="gif" />
+    <a href="https://x.com/GPTANA7" class="btn">🚀 Join the Banana Army</a>
+  </body>
 </html>
