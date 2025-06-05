@@ -8,74 +8,57 @@
     body, html {
       margin: 0;
       padding: 0;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      overflow-x: hidden;
       height: 100%;
+      font-family: 'Comic Sans MS', cursive;
+      background-color: #87ceeb; /* fallback 바다색 */
+      background-image: url('banana-background.png'); /* 바나나+바다 배경 */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow: hidden;
     }
 
     .container {
       position: relative;
-      width: 100%;
       height: 100vh;
-      overflow: hidden;
-      background: url('banana-background.png') no-repeat center center/cover;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.4); /* 어두운 필터 */
-      z-index: 1;
-    }
-
-    .content {
-      position: relative;
-      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      top: 25%;
-      padding: 0 20px;
-      color: white;
+      color: #fff;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
     }
 
-    .title {
+    h1 {
       font-size: 3rem;
-      color: white;
-      text-shadow: 2px 2px 10px #000;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     .twitter-btn {
-      display: inline-block;
+      background-color: #ffeb3b;
+      color: #222;
       padding: 14px 28px;
+      border: none;
+      border-radius: 50px;
       font-size: 1.1rem;
       font-weight: bold;
-      background-color: #ffdd00;
-      color: #000;
-      border: none;
-      border-radius: 30px;
       text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: background 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
     }
 
     .twitter-btn:hover {
-      background-color: #ffe640;
+      background-color: #ffe600;
       transform: scale(1.05);
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="overlay"></div>
-    <div class="content">
-      <h1 class="title">🚀 GPTANA MEME COIN 💥</h1>
-      <a class="twitter-btn" href="https://x.com/GPTANA7" target="_blank">
-        Follow us on Twitter/X
-      </a>
-    </div>
+    <h1>🚀 GPTANA MEME COIN 🌊🍌</h1>
+    <a class="twitter-btn" href="https://x.com/GPTANA7" target="_blank">Follow us on Twitter/X</a>
   </div>
 </body>
 </html>
