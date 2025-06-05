@@ -3,106 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GPTANA Meme Coin</title>
+  <title>GPTANA - Banana Meme Coin</title>
   <style>
-    body, html {
+    body {
       margin: 0;
       padding: 0;
-      height: 100%;
       font-family: 'Comic Sans MS', cursive;
-      background: linear-gradient(to bottom, #a2e8ff, #fff9c4);
-      overflow: hidden;
+      background: url('https://i.imgur.com/MDZnZPv.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
     }
 
-    .background-floating {
-      position: absolute;
-      top: 0;
-      left: 0;
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.4);
       width: 100%;
-      height: 100%;
-      z-index: 0;
-      overflow: hidden;
-    }
-
-    .banana {
-      position: absolute;
-      width: 100px;
-      opacity: 0.7;
-      animation: float 20s linear infinite;
-    }
-
-    .banana:nth-child(1) {
-      top: 20%;
-      left: -100px;
-      animation-delay: 0s;
-    }
-
-    .banana:nth-child(2) {
-      top: 50%;
-      left: -200px;
-      animation-delay: 5s;
-    }
-
-    .banana:nth-child(3) {
-      top: 70%;
-      left: -150px;
-      animation-delay: 10s;
-    }
-
-    @keyframes float {
-      0% { transform: translateX(0) rotate(0deg); }
-      100% { transform: translateX(120vw) rotate(360deg); }
-    }
-
-    .container {
-      position: relative;
-      z-index: 2;
       height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: center;
-      color: white;
-      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
     }
 
     h1 {
       font-size: 3rem;
       margin-bottom: 20px;
+      text-shadow: 2px 2px 6px black;
     }
 
     .twitter-btn {
-      background-color: #ffeb3b;
-      color: #222;
-      padding: 14px 28px;
-      border: none;
-      border-radius: 50px;
-      font-size: 1.1rem;
-      font-weight: bold;
+      background-color: #FFD700;
+      color: black;
+      padding: 15px 30px;
       text-decoration: none;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      font-weight: bold;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       transition: all 0.3s ease;
     }
 
     .twitter-btn:hover {
-      background-color: #ffe600;
+      background-color: #ffcc00;
       transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <!-- 움직이는 배경 바나나들 -->
-  <div class="background-floating">
-    <img src="banana-center.gif" class="banana" alt="banana" />
-    <img src="banana-center.gif" class="banana" alt="banana" />
-    <img src="banana-center.gif" class="banana" alt="banana" />
-  </div>
-
-  <!-- 메인 콘텐츠 -->
-  <div class="container">
-    <h1>🚀 GPTANA MEME COIN 🌊🍌</h1>
-    <a class="twitter-btn" href="https://x.com/GPTANA7" target="_blank">Follow us on Twitter/X</a>
+  <div class="overlay">
+    <h1>🍌 GPTANA MEME COIN 🍌</h1>
+    <a class="twitter-btn" href="https://x.com/GPTANA7" target="_blank">Follow us on Twitter</a>
   </div>
 </body>
 </html>
