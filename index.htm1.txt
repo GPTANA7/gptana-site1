@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPTANA 🍌</title>
+</head>
+<body style="text-align: center; font-family: sans-serif; background: #ffebd8;">
+  <h1>🍌 GPTANA Meme Coin</h1>
+  <p>The cutest banana coin on Solana is coming soon!</p>
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjZhbjExXkBneDJXdHZrMHgrCldhc0hBcSJpfewdTuumk2Ry1cQIh2NjomZWI2NTXlYjC1dj01/giphy.gif" alt="banana gif">
+</body>
+</html>
+
