@@ -4,62 +4,74 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>🍌 GPTANA Meme Coin</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Fredoka One', cursive;
-      background: linear-gradient(to right, #ffe259, #ffa751);
+      font-family: 'Comic Sans MS', sans-serif;
       text-align: center;
-      color: #333;
+      background: url('https://images.unsplash.com/photo-1604392001753-1d51c41d9c31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .container {
+      backdrop-filter: blur(6px);
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 60px 20px;
+      border-radius: 20px;
+      margin: 80px auto;
+      max-width: 700px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
     }
 
     h1 {
-      font-size: 3rem;
-      margin-top: 50px;
+      font-size: 3em;
+      margin-bottom: 0.3em;
     }
 
     p {
-      font-size: 1.3rem;
-      margin: 10px auto 30px;
+      font-size: 1.4em;
+      margin-bottom: 1.5em;
     }
 
-    img {
+    .gif-container img {
       width: 250px;
       border-radius: 20px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      animation: float 2.5s ease-in-out infinite;
+      box-shadow: 0 0 20px yellow;
     }
 
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-20px); }
-    }
-
-    .btn {
+    .button {
       display: inline-block;
-      padding: 12px 24px;
-      margin-top: 30px;
-      background-color: #ffdd00;
-      color: #000;
-      font-size: 1.1rem;
+      margin-top: 2em;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background: #ffeb3b;
+      color: black;
       border: none;
-      border-radius: 30px;
+      border-radius: 999px;
       text-decoration: none;
-      transition: background 0.3s ease;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(255, 255, 0, 0.5);
+      transition: all 0.3s ease;
     }
 
-    .btn:hover {
-      background-color: #fff176;
+    .button:hover {
+      transform: scale(1.05);
+      background: #fff176;
+      box-shadow: 0 5px 20px rgba(255, 255, 0, 0.7);
     }
   </style>
 </head>
 <body>
-  <h1>🍌 GPTANA Meme Coin</h1>
-  <p>The cutest banana coin on Solana is coming soon!</p>
-  <img src="https://media.tenor.com/fzDA1SXfb4AAAAAC/banana-dance.gif" alt="banana gif" />
-  <br />
-  <a href="#" class="btn">🚀 Join the Banana Army</a>
+  <div class="container">
+    <h1>🍌 GPTANA Meme Coin</h1>
+    <p>The cutest banana coin on Solana is coming soon!</p>
+    
+    <div class="gif-container">
+      <img src="https://media.tenor.com/fzDAaTSXfb4AAAAC/banana-dance.gif" alt="banana dancing" />
+    </div>
+
+    <a class="button" href="https://twitter.com" target="_blank">🚀 Join the Banana Army</a>
+  </div>
 </body>
 </html>
